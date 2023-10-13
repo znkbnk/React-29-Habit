@@ -29,7 +29,7 @@ const CategoryDropdown = ({
 
   useEffect(() => {
     const maxWidth = categories.reduce((max, category) => {
-      const categoryWidth = category.length * 10; 
+      const categoryWidth = category.length * 10;
       return Math.max(max, categoryWidth);
     }, 150); // Minimum width of 150px
 
@@ -40,7 +40,7 @@ const CategoryDropdown = ({
     showCategoriesDropdown && (
       <div className='dropdown-content' style={{ width: `${dropdownWidth}px` }}>
         {defaultCategories.map((category, index) => (
-          <div key={index} className='category-item'>
+          <div key={index} className='category-item-all'>
             <button
               onClick={() => onCategorySelect(category)}
               className={`dropdown-link ${
@@ -52,7 +52,7 @@ const CategoryDropdown = ({
           </div>
         ))}
         {categories.map((category, index) => (
-          <div key={index} className='category-item'>
+          <div key={index} className='category-item-rest'>
             <button
               onClick={() => onCategorySelect(category)}
               className={`dropdown-link ${
@@ -90,7 +90,7 @@ const CategoryDropdown = ({
             </button>
           </div>
         )} */}
-         {/* end of comment  */}
+        {/* end of comment  */}
         <div>
           <input
             type='text'
