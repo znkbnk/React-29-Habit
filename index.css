@@ -1,6 +1,5 @@
 /* Global styles */
 body {
-  font-family: Arial, sans-serif;
   background: #f2f2f2;
   margin: 0;
   padding: 0;
@@ -42,6 +41,8 @@ select {
   color: #fff;
 }
 
+
+
 button {
   width: 100%;
   border: none;
@@ -76,8 +77,6 @@ ul {
   text-align: left;
   flex-direction: column;
 }
-
-
 
 li {
   display: flex;
@@ -116,6 +115,7 @@ li:last-child {
 
 .nav-menu button:hover {
   background-color: #333;
+  
 }
 
 .nav-menu .categories-button {
@@ -138,6 +138,7 @@ li:last-child {
 .dropdown {
   position: relative;
   cursor: pointer;
+  
 }
 
 .dropdown .dropbtn {
@@ -149,10 +150,26 @@ li:last-child {
   margin-right: 1rem;
   font-size: 12px;
   transition: background-color 0.3s ease-in-out;
+  
 }
 
 .dropdown .dropbtn:hover {
   background-color: #555;
+}
+
+.dropdown-content {
+  display: flex;
+  position: relative;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  flex-direction: column;
+  align-items: center;
+  z-index: 111;
+  left: 15%;
+  width: 150px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .dropdown .content {
@@ -170,6 +187,7 @@ li:last-child {
 
 .dropdown:hover .content::after {
   transform: scaleX(1);
+  
 }
 
 .dropdown .content > span:first-child {
@@ -197,6 +215,7 @@ li:last-child {
   opacity: 0;
   background: linear-gradient(#555, #555);
   transition: 0.3s;
+  
 }
 
 .dropdown:hover .menu {
@@ -211,6 +230,7 @@ li:last-child {
   color: #fff;
   font-size: 14px;
   padding: 0 24px;
+  
 }
 
 .dropdown .menu a:hover {
@@ -219,6 +239,7 @@ li:last-child {
 
 .dropdown:hover .dropdown-content {
   display: flex;
+  
 }
 
 .dropdown-content button {
@@ -230,13 +251,14 @@ li:last-child {
   transition: background-color 0.3s ease-in-out;
   color: #333;
   text-align: center;
-  
+  border-radius: 10px;
 }
 
 .category-item {
   display: flex;
   align-items: center;
   white-space: nowrap; /* add a comment */
+  
 }
 
 .delete-button {
@@ -244,16 +266,17 @@ li:last-child {
   height: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
 
- .category-button:hover {
+.category-button:hover {
   border-radius: 10px;
 }
 
 .dropdown-content button:hover {
   background-color: #777;
   transition: background-color 0.3s ease-in-out;
+  border-radius: 10px;
 }
 
 .dark .dropdown-content button:hover {
@@ -444,18 +467,7 @@ li:last-child {
   color: #fff;
 }
 
-.dropdown-content {
-  display: flex;
-  position: relative;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  flex-direction: column;
-  align-items: center;
-  z-index: 111;
-  left: 15%;
-  width: 150px;
-  border-radius: 10px;
-}
+
 
 .dark .dropdown-content button {
   background-color: #535353;
@@ -509,16 +521,15 @@ li:last-child {
   width: 70px !important;
   height: 40px;
   display: inline-flex;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
 }
 .custom-calendar .react-calendar__tile--active {
-  background-color: #777; 
+  background-color: #777;
   color: #fff;
-  border-radius: 20px; 
+  border-radius: 20px;
 }
 
 .custom-calendar {
   padding-bottom: 20px;
 }
-
