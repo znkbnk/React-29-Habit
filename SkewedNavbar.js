@@ -48,7 +48,10 @@ export default function SkewedNavbar(props) {
     <div>
       <ul className='navbar'>
         <li>
-          <button className='nav-dark' onClick={handleDeleteClick}>
+          <button
+            className='nav-dark skewed-button'
+            onClick={handleDeleteClick}
+          >
             <span>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -92,7 +95,10 @@ export default function SkewedNavbar(props) {
           </button>
         </li>
         <li>
-          <button className='nav-dark' onClick={handleFavoriteClick}>
+          <button
+            className='nav-dark skewed-button'
+            onClick={handleFavoriteClick}
+          >
             <span>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -136,7 +142,10 @@ export default function SkewedNavbar(props) {
           </button>
         </li>
         <li>
-          <button className='nav-dark' onClick={handleCompletedClick}>
+          <button
+            className='nav-dark skewed-button'
+            onClick={handleCompletedClick}
+          >
             <span>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -187,7 +196,10 @@ export default function SkewedNavbar(props) {
           </button>
         </li>
         <li>
-          <button className='nav-dark' onClick={handleCategoriesClick}>
+          <button
+            className='nav-dark skewed-button'
+            onClick={handleCategoriesClick}
+          >
             <span>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -248,7 +260,10 @@ export default function SkewedNavbar(props) {
           </button>
         </li>
         <li>
-          <button className='nav-dark' onClick={handleRegisterClick}>
+          <button
+            className='nav-dark skewed-button'
+            onClick={handleRegisterClick}
+          >
             <span>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -310,7 +325,7 @@ export default function SkewedNavbar(props) {
         </li>
         <li>
           <button
-            className={`theme-toggle ${
+            className={`theme-toggle skewed-button ${
               theme === "dark" ? "" : "white-background"
             }`}
             onClick={(e) => {
